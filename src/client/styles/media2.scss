@@ -1,0 +1,109 @@
+@media screen and (max-width: 992px) {
+  .destinationListCardsContent,
+  .planListCardsContent {
+    padding: 15px !important;
+    row-gap: 35px !important;
+  }
+  .destinationListCards,
+  .planListCards {
+    width: 90% !important;
+    padding: 15px !important;
+  }
+  .destinatiolListCard,
+  .planListCard {
+    width: 90% !important;
+    padding: 10px !important;
+  }
+  .WeatherDetails,
+  .destinationTimeDetails {
+    justify-content: center;
+    row-gap: 10px !important;
+  }
+  .planListcardButtons {
+    row-gap: 15px !important;
+  }
+  .planListcardButtons button {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .create-Plan {
+    flex-direction: column;
+  }
+  .addNewDestintation {
+    flex-direction: column;
+  }
+  .create-plan-image-container {
+    width: 100%;
+  }
+  .add-destination-image-container {
+    width: 100%;
+  }
+  #createPlanForm {
+    width: 100%;
+  }
+  #addNewDestintationForm {
+    width: 100%;
+  }
+  #createPlanForm div {
+    width: 100%;
+  }
+  #addNewDestintationForm div {
+    width: 100%;
+  }
+  .create-plan-buttons {
+    width: 100% !important;
+  }
+  .add-destination-buttons {
+    width: 100% !important;
+  }
+  button,
+  input {
+    padding: 10px !important;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  .destinationListCardsContent,
+  .planListCardsContent {
+    padding-inline: 5px !important;
+    padding-block: 30px !important;
+  }
+  .destinationListCards,
+  .planListCards {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+  .destinatiolListCard,
+  .planListCard {
+    width: 90% !important;
+    padding: 10px !important;
+  }
+  .container {
+    width: 80% !important;
+  }
+
+  main {
+    background-image: none !important;
+    background-color: whitesmoke;
+  }
+}

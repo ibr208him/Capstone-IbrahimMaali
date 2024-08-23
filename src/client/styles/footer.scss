@@ -1,0 +1,31 @@
+.typical-footer {
+  background-color: #777;
+}
+
+.footer-content {
+  padding-block: 30px;
+  background-color: #777;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.typical-footer .copyright-par {
+  color: #f0eded;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  text-align: center !important;
+}
+
+.typical-footer .social-media-icon {
+  color: #f0eded;
+  font-size: 1.5rem !important;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.typical-footer .social-media-icon:hover {
+  color: rgb(136, 61, 40);
+}

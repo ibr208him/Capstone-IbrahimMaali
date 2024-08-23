@@ -1,0 +1,12 @@
+@media (max-width: 1200px) {
+  section {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-content {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

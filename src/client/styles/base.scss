@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 2;
+  margin-top: 50px;
+}
+
+section {
+  margin: 70px auto;
+}
+
+.greenFont {
+  color: green;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+button {
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+}
+button:hover {
+  box-shadow: 0 6px 12px rgb(23, 23, 22);
+  background-color: rgb(201, 133, 43);
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 16px;
+  margin: 20px 0;
+  color: #1b47a0;
+  font-size: 26px;
+  font-style: oblique;
+}
+
+table {
+  font-size: 18px;
+  width: 100%;
+}
+table td,
+table th {
+  vertical-align: middle;
+}

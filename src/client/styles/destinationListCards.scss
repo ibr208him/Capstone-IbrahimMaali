@@ -1,0 +1,79 @@
+.destinationListCardsContent {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  background-color: rgb(231, 215, 210);
+  padding: 50px;
+  row-gap: 15px;
+  column-gap: 15px;
+  justify-content: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.destinatiolListCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 48%;
+  padding: 25px;
+  background-color: bisque;
+  box-shadow: 0 16px 12px rgb(23, 23, 22);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.LocationImage {
+  width: 100%;
+}
+.LocationImage img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.cardDetails .destinationTimeDetails,
+.cardDetails .WeatherDetails {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(131, 102, 102);
+  padding: 10px;
+  column-gap: 5%;
+}
+
+.cardDetails .destinationTimeDetails .destinationLeaving,
+.cardDetails .destinationTimeDetails .destinationReturning,
+.cardDetails .destinationTimeDetails .destinationRemainingDays,
+.cardDetails .WeatherDetails div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.cardTitle {
+  text-align: center;
+  font-size: 26px;
+}
+
+.deleteDestinationInList {
+  background-color: rgba(152, 16, 16, 0.858);
+  color: white;
+  font-size: 18px;
+}

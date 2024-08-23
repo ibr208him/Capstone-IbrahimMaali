@@ -1,0 +1,97 @@
+.plan-list {
+  background-color: rgba(218, 224, 217, 0.666);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid rgba(179, 157, 34);
+  box-shadow: 0 16px 12px rgb(23, 22, 22);
+}
+
+.plan-list-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(179, 157, 34);
+  padding: 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgba(179, 157, 34, 0.628);
+}
+
+.plan-list-header h4 {
+  font-size: 28px;
+  color: rgb(234, 232, 232);
+  font-size: bold;
+  width: 30%;
+}
+.header-buttons {
+  display: flex;
+  justify-content: end;
+  width: 70%;
+  column-gap: 20px;
+}
+.plan-list-content {
+  padding: 15px;
+}
+
+.blank-plan-list {
+  padding-block: 50px;
+  text-align: center;
+  display: block;
+}
+.blank-plan-list p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+.blank-plan-list strong {
+  font-size: 22px;
+}
+.plan-list-items li {
+  display: flex;
+  justify-content: space-evenly;
+}
+.create-Plan {
+  display: none;
+}
+
+.blank-plan-list p,
+.blank-plan-list strong {
+  color: rgb(172, 17, 17);
+}
+
+.plan-list-items th {
+  border-top: 1px solid rgb(6, 98, 7);
+  border-inline: 1px solid rgb(6, 98, 7);
+  padding: 8px;
+  text-align: center;
+}
+
+.plan-list-items td {
+  border: 1px solid rgb(6, 98, 7);
+  padding: 8px;
+  text-align: center;
+}
+.plan-list-items thead {
+  background-color: rgb(111, 113, 111);
+}
+.plan-list-items tbody {
+  background-color: rgb(159, 163, 158);
+}
+
+.planActionDetails {
+  background-color: rgb(27, 114, 207);
+  padding-inline: 25px;
+}
+.planActionDelete {
+  background-color: rgb(207, 27, 27);
+  padding-inline: 25px;
+}
+.planActions {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  border: none;
+}

@@ -1,0 +1,194 @@
+.plan-details {
+  width: 80%;
+  display: flex;
+
+  flex-direction: column;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid rgba(202, 210, 204);
+  box-shadow: 0 16px 12px rgba(22, 23, 23, 0.961);
+}
+
+.plan-details-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  row-gap: 15px;
+  align-items: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(202, 210, 204, 0.961);
+  padding-block: 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgba(121, 33, 6, 0.748);
+  border-bottom: 2px solid rgba(202, 210, 204, 0.961);
+}
+.plan-details-content {
+  padding: 10px;
+}
+.plan-details-header h4 {
+  font-size: 28px;
+  color: rgb(234, 232, 232);
+  font-size: bold;
+}
+.plan-details-FromTo {
+  color: white;
+  font-size: 18px;
+}
+.plan-details-header-text {
+  width: 100%;
+  border-bottom: 2px solid rgba(202, 210, 204, 0.961);
+  text-align: center;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.plan-details-header-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-details-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.addNewDestintation {
+  display: none;
+}
+
+.destinationsList {
+  display: none;
+}
+
+.destinationsList th,
+.destinationsList td {
+  border: 2px solid rgba(202, 210, 204, 0.961);
+  padding: 8px;
+  text-align: center;
+}
+.destinationsList thead {
+  background-color: rgb(111, 113, 111);
+}
+.destinationsList tbody {
+  background-color: rgb(159, 163, 158);
+}
+
+//
+.LocationImage img {
+  width: 100%;
+}
+
+.blank-destination-list {
+  display: none;
+  background-color: rgba(218, 224, 217, 0.666);
+}
+
+.addNewDestintation {
+  display: none;
+  flex-direction: row;
+  background-color: rgb(109, 182, 153);
+  width: 60%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid rgba(202, 210, 204, 0.961);
+  box-shadow: 0 16px 12px rgb(23, 23, 22);
+}
+
+#addNewDestintationForm {
+  width: 50%;
+  border-radius: 3px;
+  padding: 40px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.addNewDestintation input {
+  padding: 5px 20px;
+  width: 100%;
+  line-height: 16px;
+  margin: 10px 0;
+}
+
+.add-destination-image-container {
+  width: 50%;
+  padding: 10px;
+}
+.add-destination-image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.add-destination-buttons {
+  margin-top: 10px;
+  width: 80% !important;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+}
+.add-destination-buttons button {
+  width: 100%;
+}
+
+.addNewDestintationForm div {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-message-dest {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 4px;
+  display: block;
+}
+
+.blank-destination-list {
+  padding-block: 50px;
+  text-align: center;
+}
+.blank-destination-list p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+.blank-destination-list strong {
+  font-size: 22px;
+}
+
+.blank-destination-list {
+  display: block;
+}
+
+.blank-destination-list strong,
+.blank-destination-list p {
+  color: blue;
+}
+
+.errorHandlingAddNewDestination .error-content {
+  color: white;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.background-red {
+  background-color: red;
+}
