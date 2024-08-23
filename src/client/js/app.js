@@ -594,9 +594,9 @@ function deleteDestination(iDest, iPlan) {
     JSON.stringify(plansSavedFromLocalStorage)
   );
   document.querySelector(".destinationListCardsContent").innerHTML = "";
-
-  const issue = true;
-  updateDestinationList(iPlan, issue);
+  window.location.reload(true);
+  // const issue = true;
+  // updateDestinationList(iPlan, issue);
 }
 
 function handleAddNewDestination() {
