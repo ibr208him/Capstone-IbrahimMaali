@@ -33,7 +33,9 @@
   <!------ end of header section ----------------------------------------------------------------------->
   <main>
     <section class="create-Plan">
-      <form id="createPlanForm" onsubmit="return Client.validatePlanForm()">
+      <!-- <form id="createPlanForm" onsubmit="return Client.validatePlanForm()"> -->
+        <form id="createPlanForm" >
+
         <div>
           <label for="plan-Name">Plan Name</label>
           <input id="plan-Name" type="text" name="plan-Name" placeholder="Enter the plan name" maxlength="100"
@@ -51,7 +53,7 @@
           <p id="returningDateError" class="error-message"></p>
         </div>
         <div class="create-plan-buttons">
-          <button id="createPlan-submitButton" type="submit">Create</button>
+          <button id="createPlan-submitButton" type="button">Create</button>
           <button id="CancelPlanButton" type="button">Cancel</button>
         </div>
       </form>
@@ -91,10 +93,10 @@
           <p class="plan-details-FromTo"></p>
         </div>
         <div class="plan-details-buttons">
-          <button type="submit" id="savePlan">Save and Back</button>
-          <button type="submit" id="addNewDestinationNavButton">Add new Destination</button>
-          <button type="submit" id="cancelPlan">Delete Plan</button>
-          <button type="submit" id="deleteAllDestinationsButton">Delete All Destinations</button>
+          <button type="button" id="savePlan">Save and Back</button>
+          <button type="button" id="addNewDestinationNavButton">Add new Destination</button>
+          <button type="button" id="cancelPlan">Delete Plan</button>
+          <button type="button" id="deleteAllDestinationsButton">Delete All Destinations</button>
         </div>
       </div>
       <div class="plan-details-content">
@@ -110,7 +112,9 @@
         </div>
     </section>
     <section class="addNewDestintation">
-      <form id="addNewDestintationForm" onsubmit="return Client.validateDestForm()">
+      <!-- <form id="addNewDestintationForm" onsubmit="return Client.validateDestForm()"> -->
+        <form id="addNewDestintationForm" >
+
         <div>
           <label for="destination-Name">City Name</label>
           <input id="destination-Name" type="text" name="destination-Name" placeholder="Enter the city name"
@@ -130,8 +134,8 @@
           <p id="returningDateDestError" class="error-message-dest"></p>
         </div>
         <div class="add-destination-buttons">
-          <button id="addDestSubmitButton" type="submit">Add Destination</button>
-          <button id="CanceladdDestButton" type="submit">Cancel</button>
+          <button id="addDestSubmitButton" type="button">Add Destination</button>
+          <button id="CanceladdDestButton" type="button">Cancel</button>
         </div>
         <div class="errorHandlingAddNewDestination"> 
           <p class="error-content"></p>
@@ -205,7 +209,7 @@
       </div>
   </footer>
   <!------- end of footer section --------------------------------------------------------------------->
-  <!-- <script>
+  <script>
       // Check that service workers are supported
       if ('serviceWorker' in navigator) { 
           // Use the window load event to keep the page load performant 
@@ -219,7 +223,7 @@
               });
           }); 
       }
-  </script> -->
+  </script>
 </body>
 
 </html>

@@ -259,23 +259,40 @@ function deletePlan(index) {
 }
 
 function deleteAllDestinationsfnc(index) {
-  const plansSavedFromLocalStorage = JSON.parse(
+  console.log("Clearing destinations for plan index:", index);
+  let plansSavedFromLocalStorage = JSON.parse(
     localStorage.getItem("plansSaved")
   );
-  plansSavedFromLocalStorage[index].destinations?.splice(
-    0,
-    plansSavedFromLocalStorage[index].destinations.length
-  );
+  console.log("Plans before clearing destinations:", plansSavedFromLocalStorage);
+
+
+  // plansSavedFromLocalStorage[index].destinations?.splice(
+  //   0,
+  //   plansSavedFromLocalStorage[index].destinations.length
+  // );
+  plansSavedFromLocalStorage[index].destinations = [];
 
   localStorage.setItem(
     "plansSaved",
     JSON.stringify(plansSavedFromLocalStorage)
   );
+  console.log("Plans after clearing destinations:", plansSavedFromLocalStorage);
 
-  document.querySelector(".destinationListCardsContent").innerHTML = "";
+
+  // document.querySelector(".destinationListCardsContent").innerHTML = "";
+  const destinationListContent = document.querySelector(".destinationListCardsContent");
+    destinationListContent.innerHTML = "";
   window.location.reload(true);
-  // const issue = false;
+  // const issue = true;
   // updateDestinationList(index, issue);
+  const blankDestinationList = document.querySelector(".blank-destination-list");
+  if (plansSavedFromLocalStorage[index].destinations.length === 0) {
+    blankDestinationList.style.display = "block";
+    destinationListContent.style.display = "none";
+  } else {
+    blankDestinationList.style.display = "none";
+    destinationListContent.style.display = "flex";
+  }
 }
 
 async function addNewDestination() {
@@ -421,7 +438,7 @@ async function updateDestinationList(indexPlan, issue) {
       localStorage.getItem("plansSaved")
     );
 
-    if (plansSavedFromLocalStorage[indexPlan].destinations.length == 0) {
+    if (plansSavedFromLocalStorage[indexPlan].destinations.length === 0) {
 
       document.querySelector(".blank-destination-list").style.display = "block";
       document.querySelector(".destinationListCardsContent").style.display =
@@ -594,7 +611,7 @@ function deleteDestination(iDest, iPlan) {
     JSON.stringify(plansSavedFromLocalStorage)
   );
   document.querySelector(".destinationListCardsContent").innerHTML = "";
-  window.location.reload(true);
+   window.location.reload(true);
   // const issue = true;
   // updateDestinationList(iPlan, issue);
 }
